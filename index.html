@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Projet Biocell</title>
+	<meta name="author" content="Clément_Goupil_Cédric_Le_Denmat_Cindy_Leite"/>
+	<link rel="stylesheet" type="text/css" href="menu.css" title="feuille de style css"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/mesfonctions.js"></script>
+</head>
+
+<body>
+
+<header>
+<img src="medias\images\logo_menu.png" id="logo" alt="logo_menu"/><!--logo -->
+
+	<nav><!-- Menu -->
+		<ul>
+			<li><a href="#accueil_texte">Synopsis</a></li>
+			<li><a href="#">Storyboard</a></li>
+			<li><a href="#">Vidéo</a></li>
+			<li><a href="#">Equipe</a></li>
+		</ul>
+	</nav>
+
+
+
+
+</header>
+
+<div id="accueil_fond">
+	<img src="medias\images\fond.png" alt="image_fond"/><!--image de fond -->
+</div>
+
+<div id="accueil_titre">
+	<img src="medias\images\titre_accueil.png" alt="titre accueil"/><!--titre par dessus l'image de -->
+</div>
+
+<div id="accueil_texte">
+<p> Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
+signis quis ignorat? Quae illi, exhausti sumptibus bellisque
+maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
+affervescentem in Asiam atque erumpentem,clusum
+tum, inquam, Byzantii et postea </p>
+</div>
+
+<div class="flechebas">
+	<img src="medias\images\fleche_bas.png" alt="flèche bas"/><!--flèche pour descendre d'une ancre-->
+</div>
+
+
+
+</body>
+<script>
+$(document).ready(function(){
+    // au clic sur un lien
+    $('a').on('click', function(evt){
+       // bloquer le comportement par défaut: on ne rechargera pas la page
+       evt.preventDefault();
+       // enregistre la valeur de l'attribut  href dans la variable target
+	var target = $(this).attr('href');
+       /* le sélecteur $(html, body) permet de corriger un bug sur chrome
+       et safari (webkit) */
+	$('html, body')
+       // on arrête toutes les animations en cours
+       .stop()
+       /* on fait maintenant l'animation vers le haut (scrollTop) vers
+        notre ancre target */
+       .animate({scrollTop: $(target).offset().top}, 1000 );
+    });
+});
+</script>
+
+</html>
