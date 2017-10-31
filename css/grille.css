@@ -1,0 +1,161 @@
+/** Création d'une nouvelle partie **/
+/** idem pour tout le monde **/
+.partie {
+	padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.down_bouton{
+	border: solid 3px red;
+	grid-column:1/13;
+  text-align: center;
+}
+.down_bouton img{
+	margin: 0.5%;
+	width: 3.5%;
+	transform: scale(0.99);
+	transition-duration: 0.5s;
+}
+.down_bouton img:hover{
+  transform: scale(1.15);
+	transition-duration: 0.5s;
+}
+
+/** Définiton de la grille pour la partie Synopsis **/
+
+.accueil_fondbis{
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row: 1;
+}
+
+.accueil_titrebis{
+  border: solid 3px red;
+  grid-column:3/11;
+  grid-row: 1;
+}
+
+.accueil_bouton{
+  grid-row: 2/3;
+}
+
+/** Définiton de la grille pour la partie Synopsis **/
+.synopsis_titre{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row: 1;
+}
+.synopsis_image{
+	border: solid 3px red;
+	grid-column:1/6;
+  grid-row: 2/6;
+}
+.synopsis_texte{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column: 6/13;
+  grid-row: 2/6;
+}
+.synopsis_sstitre{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row:6/7 ;
+}
+.synopsis_module1{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/5;
+  grid-row:7/10;
+}
+.synopsis_module2{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:5/9;
+  grid-row:7/10;
+}
+.synopsis_module3{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:9/13;
+  grid-row: 7/10;
+}
+
+.synopsis_bouton{
+  grid-row: 10/11;
+}
+
+/** Définiton de la grille pour la partie StoryBoard **/
+.storyboard_titre{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row: 1;
+}
+.storyboard_slider{
+	grid-column:1/13;
+  grid-row: 2/5;
+}
+/** Définiton de la grille pour la partie Vidéo **/
+.video_titre{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row: 1;
+}
+
+.video_texte{
+  border: solid 3px red;
+  grid-column:1/13;
+  grid-row: 2/3;
+}
+
+.video_media{
+  border: solid 3px red;
+  grid-column:3/11;
+  grid-row: 3/4;
+	margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.video_bouton{
+  grid-row: 4/5;
+}
+
+/** Définiton de la grille pour la partie Equipe **/
+.equipe_titre{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/13;
+  grid-row: 1;
+}
+
+.equipe_module1{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:1/5;
+  grid-row:2/5;
+}
+.equipe_module2{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:5/9;
+  grid-row:2/5;
+}
+.equipe_module3{
+	padding: 10px;
+	border: solid 3px red;
+	grid-column:9/13;
+  grid-row: 2/5;
+}
+
+.equipe_bouton{
+  grid-row: 5/6;
+}
+
+/** Definition partie pour le footer**/

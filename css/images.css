@@ -1,0 +1,21 @@
+/** image remplie une div **/
+.image_rognee{
+	height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/** image partie acceuil **/
+.accueil_fondbis img{
+  width: 100%;
+}
+
+.accueil_titrebis img{
+  padding-top: 5%;
+  width: 100%;
+}
+
+.video_media img{
+  width: 100%;
+}

@@ -4,73 +4,212 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<title>Projet Biocell</title>
 	<meta name="author" content="Clément_Goupil_Cédric_Le_Denmat_Cindy_Leite"/>
-	<link rel="stylesheet" type="text/css" href="menu.css" title="feuille de style css"/>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/mesfonctions.js"></script>
+
+	<title>Projet Biocell</title>
+
+	<link rel="stylesheet" type="text/css" href="css/menu.css" title="feuille de style css"/>
+	<link rel="stylesheet" type="text/css" href="css/grille.css"/>
+	<link rel="stylesheet" type="text/css" href="css/images.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mise_en_page.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slide.css"/>
+	 <script src="js/slide.js"></script>
+
 </head>
 
 <body>
 
 <header>
-<img src="medias\images\logo_menu.png" id="logo" alt="logo_menu"/><!--logo -->
+<!--logo -->
+<img src="medias\images\logo_menu.png" id="logo" alt="logo_menu"/>
 
-	<nav><!-- Menu -->
+<!-- Menu -->
+	<nav>
 		<ul>
-			<li><a href="#accueil_texte">Synopsis</a></li>
-			<li><a href="#">Storyboard</a></li>
-			<li><a href="#">Vidéo</a></li>
-			<li><a href="#">Equipe</a></li>
+			<li><a href="#synopsis_partie">Synopsis</a></li>
+			<li><a href="#storyboard_partie">Storyboard</a></li>
+			<li><a href="#video_partie">Vidéo</a></li>
+			<li><a href="#equipe_partie">Equipe</a></li>
 		</ul>
 	</nav>
 
-
-
-
 </header>
 
-<div id="accueil_fond">
-	<img src="medias\images\fond.png" alt="image_fond"/><!--image de fond -->
+<div class="partie">
+
+	<div class="accueil_fondbis">
+		<img id="home" src="medias\images\fond.png" alt="image_fond"/>
+	</div>
+
+	<div class="accueil_titrebis">
+		<img src="medias\images\titre_accueil.png" alt="titre accueil"/>
+		<p>
+			Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
+		signis quis ignorat? Quae illi, exhausti sumptibus bellisque
+		maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
+		affervescentem in Asiam atque erumpentem,clusum
+		tum, inquam, Byzantii et postea
+	</p>
+	<a class="test_video" href="https://www.youtube.com">
+			Tester la vidéo
+	</a>
+	</div>
+
+	<div class="down_bouton accueil_bouton">
+		<!--flèche pour descendre d'une ancre-->
+		<a href="#synopsis_partie">
+			<img src="medias\images\fleche_bas.png" alt="Suivant ->"/>
+		</a>
+	</div>
 </div>
 
-<div id="accueil_titre">
-	<img src="medias\images\titre_accueil.png" alt="titre accueil"/><!--titre par dessus l'image de -->
+<div class="partie">
+
+  <div class="synopsis_titre">
+		<h1 id="synopsis_partie">Synopsis</h1>
+	</div>
+
+  <div class="synopsis_image">
+		<div class="image_rognee" style="background-image: url('http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/12/frustrated-boy-studying.bmp');">
+		</div>
+	</div>
+
+  <div class="synopsis_texte">
+		<h2>Pourquoi un tel projet ?</h2>
+		<p>
+			Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
+		signis quis ignorat? Quae illi, exhausti sumptibus bellisque
+		maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
+		affervescentem in Asiam atque erumpentem,clusum
+		tum, inquam, Byzantii et postea
+	</p>
+	<a class="savoir_plus" href="https://www.youtube.com">
+			En savoir plus
+	</a>
+	</div>
+
+  <div class="synopsis_sstitre">
+		<h2>Comment ça marche ?</h2>
+	</div>
+
+  <div class="synopsis_module1">
+		<h3>Les cours</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+  <div class="synopsis_module2">
+		<h3>Le forum</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+	<div class="synopsis_module3">
+		<h3>Les test</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+	<div class="down_bouton synopsis_bouton">
+		<!--flèche pour descendre d'une ancre-->
+		<a href="#storyboard_partie">
+			<img src="medias\images\fleche_bas.png" alt="Suivant ->"/>
+		</a>
+	</div>
+
 </div>
 
-<div id="accueil_texte">
-<p> Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
-signis quis ignorat? Quae illi, exhausti sumptibus bellisque
-maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
-affervescentem in Asiam atque erumpentem,clusum
-tum, inquam, Byzantii et postea </p>
+<div class="partie">
+
+	<div class="storyboard_titre">
+		<h1 id="storyboard_partie">StoryBoard</h1>
+	</div>
+
+	<div class="storyboard_slider">
+		<div class="slideshow-container">
+ <div class="mySlides fade">
+	 <div class="numbertext">1 / 3</div>
+	 <img src="medias/slide/sky.jpg" style="width:100%">
+	 <div class="text">Caption Text</div>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">2 / 3</div>
+	 <img src="medias/slide/mer.jpg" style="width:100%">
+	 <div class="text">Caption Two</div>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">3 / 3</div>
+	 <img src="medias/slide/ciel.jpg" style="width:100%">
+	 <div class="text">Caption Three</div>
+ </div>
+
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+	</div>
 </div>
 
-<div class="flechebas">
-	<img src="medias\images\fleche_bas.png" alt="flèche bas"/><!--flèche pour descendre d'une ancre-->
+<div class="partie">
+
+	<div class="video_titre">
+		<h1 id="video_partie">Vidéo</h1>
+	</div>
+
+	<div class="video_texte">
+		<p>
+			Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
+		signis quis ignorat? Quae illi, exhausti sumptibus bellisque
+		maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
+		affervescentem in Asiam atque erumpentem,clusum
+		tum, inquam, Byzantii et postea
+		</p>
+	</div>
+
+	<div class="video_media">
+		
+	</div>
+
+	<div class="down_bouton video_bouton">
+		<!--flèche pour descendre d'une ancre-->
+		<a href="#equipe_partie">
+			<img src="medias\images\fleche_bas.png" alt="Suivant ->"/>
+		</a>
+	</div>
+
 </div>
 
+<div class="partie">
 
+	<div class="equipe_titre">
+		<h1 id="equipe_partie">Equipe</h1>
+	</div>
 
+	<div class="equipe_module1">
+		<h3>Cédric</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+  <div class="equipe_module2">
+		<h3>Cindy</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+	<div class="equipe_module3">
+		<h3>Clément</h3>
+		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
+	</div>
+	<div class="down_bouton equipe_bouton">
+		<!--flèche pour descendre d'une ancre-->
+		<a href="#home">
+			<img style="image-orientation: 180deg;" src="medias\images\fleche_bas.png" alt="Suivant ->"/>
+		</a>
+	</div>
+
+</div>
+<footer class="footer">
+
+</footer>
 </body>
-<script>
-$(document).ready(function(){
-    // au clic sur un lien
-    $('a').on('click', function(evt){
-       // bloquer le comportement par défaut: on ne rechargera pas la page
-       evt.preventDefault();
-       // enregistre la valeur de l'attribut  href dans la variable target
-	var target = $(this).attr('href');
-       /* le sélecteur $(html, body) permet de corriger un bug sur chrome
-       et safari (webkit) */
-	$('html, body')
-       // on arrête toutes les animations en cours
-       .stop()
-       /* on fait maintenant l'animation vers le haut (scrollTop) vers
-        notre ancre target */
-       .animate({scrollTop: $(target).offset().top}, 1000 );
-    });
-});
-</script>
 
 </html>
