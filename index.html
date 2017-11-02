@@ -8,20 +8,26 @@
 
 	<title>Projet Biocell</title>
 
+	<link rel="shortcut icon" href="medias/images/logo_menu.png">
+
 	<link rel="stylesheet" type="text/css" href="css/menu.css" title="feuille de style css"/>
 	<link rel="stylesheet" type="text/css" href="css/grille.css"/>
 	<link rel="stylesheet" type="text/css" href="css/images.css"/>
 	<link rel="stylesheet" type="text/css" href="css/mise_en_page.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slide.css"/>
+	<link rel="stylesheet" type="text/css" href="css/modal.css"/>
 	<script src="js/slide.js"></script>
+	<script src="js/modal.js"></script>
 
 </head>
 
-<body>
+<body onload="showSlides(1)">
 
 <header>
 <!--logo -->
-<img src="medias\images\logo_menu.png" id="logo" alt="logo_menu"/>
+<a href="https://pod.univ-lille1.fr/">
+	<img src="medias\images\logo_menu.png" id="logo" alt="logo_menu"/>
+</a>
 
 <!-- Menu -->
 	<nav>
@@ -38,21 +44,22 @@
 <div class="partie">
 
 	<div class="accueil_fondbis">
-		<img id="home" src="medias\images\fond.png" alt="image_fond"/>
+		<div id="home" class="parallax" style="background-image: url('medias/images/fond.png')">
+		</div>
 	</div>
 
 	<div class="accueil_titrebis">
 		<img src="medias\images\titre_accueil.png" alt="titre accueil"/>
-		<p>
+		<p class="accueil_p">
 			Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam
 		signis quis ignorat? Quae illi, exhausti sumptibus bellisque
 		maximis, cum omnis Mithridaticos impetus totumque Pontum armatum
 		affervescentem in Asiam atque erumpentem,clusum
 		tum, inquam, Byzantii et postea
-	</p>
-	<a class="test_video" href="https://www.youtube.com">
-			Tester la vidéo
-	</a>
+		</p>
+		<a class="test_video" target="_blank" href="https://pod.univ-lille1.fr/video_priv/4732/03aeee9ab4fe60b1311a7c849a8dc8b7f6ff8b2f6f4833f98ecb07080aec548c/?interactive=true">
+				Tester la vidéo
+		</a>
 	</div>
 
 	<div class="down_bouton accueil_bouton">
@@ -69,8 +76,8 @@
 		<h1 id="synopsis_partie">Synopsis</h1>
 	</div>
 
-  <div class="synopsis_image">
-		<div class="image_rognee" style="background-image: url('http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/12/frustrated-boy-studying.bmp');">
+	<div class="synopsis_image">
+		<div class="image_rognee" style="background-image: url('http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/12/frustrated-boy-studying.bmp')">
 		</div>
 	</div>
 
@@ -83,9 +90,11 @@
 		affervescentem in Asiam atque erumpentem,clusum
 		tum, inquam, Byzantii et postea
 	</p>
-	<a class="savoir_plus" href="https://www.youtube.com">
+
+	<a class="test_video" target="_blank" href="https://www.youtube.com">
 			En savoir plus
 	</a>
+
 	</div>
 
   <div class="synopsis_sstitre">
@@ -93,14 +102,17 @@
 	</div>
 
   <div class="synopsis_module1">
+		<img class="module" src="medias\images\synopsis\dna.png"/>
 		<h3>Les cours</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
   <div class="synopsis_module2">
+		<img class="module" src="medias\images\synopsis\bulles.png"/>
 		<h3>Le forum</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
 	<div class="synopsis_module3">
+		<img class="module" src="medias\images\synopsis\tools.png"/>
 		<h3>Les test</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
@@ -119,36 +131,71 @@
 		<h1 id="storyboard_partie">StoryBoard</h1>
 	</div>
 
+	<div class="storyboard_slider_text">
+		<div class="description fade">
+			<p>
+				le texte ...
+
+				Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem in Asiam atque erumpentem,clusum tum, inquam, Byzantii et postea
+			</p>
+		</div>
+
+		<div class="description fade">
+			<p>
+ 			 ... change ...
+
+ 			 Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem in Asiam atque erumpentem,clusum tum, inquam, Byzantii et postea
+ 		 </p>
+		</div>
+
+		<div class="description fade">
+			<p>
+ 			 ... aussi ...
+
+ 			 Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem in Asiam atque erumpentem,clusum tum, inquam, Byzantii et postea
+ 		 </p>
+		</div>
+
+	</div>
+
 	<div class="storyboard_slider">
 		<div class="slideshow-container">
- <div class="mySlides fade">
-	 <div class="numbertext">1 / 3</div>
-	 <img src="medias/slide/sky.jpg" style="width:100%">
-	 <div class="text">Caption Text</div>
- </div>
+		 <div class="mySlides fade">
+			 <div class="numbertext">1 / 3</div>
+			 <img src="medias/slide/sky.jpg" style="width:100%">
+			 <div class="text">Caption Text</div>
+		 </div>
 
- <div class="mySlides fade">
-	 <div class="numbertext">2 / 3</div>
-	 <img src="medias/slide/mer.jpg" style="width:100%">
-	 <div class="text">Caption Two</div>
- </div>
 
- <div class="mySlides fade">
-	 <div class="numbertext">3 / 3</div>
-	 <img src="medias/slide/ciel.jpg" style="width:100%">
-	 <div class="text">Caption Three</div>
- </div>
+		 <div class="mySlides fade">
+			 <div class="numbertext">2 / 3</div>
+			 <img src="medias/slide/mer.jpg" style="width:100%">
+			 <div class="text">Caption Two</div>
+		 </div>
 
- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
- <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+		 <div class="mySlides fade">
+			 <div class="numbertext">3 / 3</div>
+			 <img src="medias/slide/ciel.jpg" style="width:100%">
+			 <div class="text">Caption Three</div>
+		 </div>
 
-<div style="text-align:center">
- <span class="dot" onclick="currentSlide(1)"></span>
- <span class="dot" onclick="currentSlide(2)"></span>
- <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+		 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br/>
+		<div style="text-align:center">
+		 <span class="dot" onclick="currentSlide(1)"></span>
+		 <span class="dot" onclick="currentSlide(2)"></span>
+		 <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+	</div>
+
+	<div class="down_bouton storyboard_bouton">
+		<!-- flèche pour descendre d'une ancre -->
+		<a href="#video_partie">
+			<img src="medias\images\fleche_bas.png" alt="Suivant ->"/>
+		</a>
 	</div>
 </div>
 
@@ -169,7 +216,11 @@
 	</div>
 
 	<div class="video_media">
-
+		<video width="640" height="480" controls>
+			<source src="http://pod.univ-lille1.fr/media/videos/cedric.ledenmat/4732/video_4732_240.mp4" type="video/mp4">
+			<source src="http://pod.univ-lille1.fr/media/videos/cedric.ledenmat/4732/video_4732_240.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+		</video>
 	</div>
 
 	<div class="down_bouton video_bouton">
@@ -188,26 +239,47 @@
 	</div>
 
 	<div class="equipe_module1">
+		<img class="module" src="medias\images\equipe\cedric.png"/>
 		<h3>Cédric</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
   <div class="equipe_module2">
+		<img class="module" src="medias\images\equipe\cindy.png"/>
 		<h3>Cindy</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
 	<div class="equipe_module3">
+		<img class="module" src="medias\images\equipe\cedric.png"/>
 		<h3>Clément</h3>
 		<p>Byzantiorum fuisse refertis simamatque ornatissimam signis quis ignorat? Quae illi,</p>
 	</div>
 	<div class="down_bouton equipe_bouton">
-		<!--flèche pour descendre d'une ancre-->
+		<!-- flèche pour descendre d'une ancre -->
 		<a href="#home">
 			<img style="image-orientation: 180deg;" src="medias\images\fleche_bas.png" alt="Suivant ->"/>
 		</a>
 	</div>
-
 </div>
 <footer class="footer">
+	<div class="partie">
+
+		<div class="footer_img">
+			<img src="medias\images\logo.png" alt="Suivant ->"/>
+		</div>
+
+		<div class="footer_texte">
+			<p class="footer_p">
+				Ipsam vero urbem Byzantiorum fuisse refertissimam Ipsam vero urbem Byzantiorum fuisse refertissi
+			</p>
+		</div>
+
+		<div class="footer_credit">
+			<p class="footer_p">
+				Ipsam vero urbem @ Byzantiorum fuisse
+			</p>
+		</div>
+
+	</div>
 
 </footer>
 </body>
